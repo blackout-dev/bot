@@ -6,7 +6,7 @@
 		[
 			"@semantic-release/exec",
 			{
-				"publishCmd": "docker build -t bot ."
+				"prepareCmd": "docker build -t bot ."
 			}
 		],
 		[
