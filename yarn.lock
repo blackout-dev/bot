@@ -49,7 +49,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eclass/semantic-release-docker@npm:^1.0.3":
+"@eclass/semantic-release-docker@npm:1.0.3":
   version: 1.0.3
   resolution: "@eclass/semantic-release-docker@npm:1.0.3"
   dependencies:
@@ -267,7 +267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/exec@npm:^5.0.0":
+"@semantic-release/exec@npm:5.0.0":
   version: 5.0.0
   resolution: "@semantic-release/exec@npm:5.0.0"
   dependencies:
@@ -1240,8 +1240,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "blackout-bot@workspace:."
   dependencies:
-    "@eclass/semantic-release-docker": ^1.0.3
-    "@semantic-release/exec": ^5.0.0
+    "@eclass/semantic-release-docker": 1.0.3
+    "@semantic-release/exec": 5.0.0
     "@types/amqplib": 0.5.13
     "@types/dotenv": 8.2.0
     "@types/node": 14.0.5
@@ -1269,7 +1269,7 @@ __metadata:
     pino: 6.3.0
     pino-pretty: 4.0.0
     prettier: 2.0.5
-    semantic-release: ^17.0.8
+    semantic-release: 17.0.8
     typescript: 3.9.3
     utf-8-validate: 5.0.2
     xo: 0.30.0
@@ -8615,7 +8615,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:17.0.8, semantic-release@npm:^17.0.8":
+"semantic-release@npm:17.0.8":
   version: 17.0.8
   resolution: "semantic-release@npm:17.0.8"
   dependencies:
