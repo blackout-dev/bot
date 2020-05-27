@@ -11,7 +11,7 @@ COPY package.json yarn.lock .yarnrc.yml ./
 COPY .yarn/releases/yarn-berry.js .yarn/releases/yarn-berry.js
 
 # Setup node-gyp
-RUN apk update && apk add python g++ make && rm -rf /var/cache/apk/*
+RUN apk --no-cache add python g++ make && rm -rf /var/cache/apk/*
 RUN yarn install
 
 # Copy build configurations
@@ -41,7 +41,7 @@ COPY package.json .yarnrc.yml ./
 COPY --from=builder /usr/src/builder/tsc_output ./tsc_output
 
 # Link dependencies
-RUN apk update && apk add python g++ make && rm -rf /var/cache/apk/*
+RUN apk --no-cache add python g++ make && rm -rf /var/cache/apk/*
 RUN yarn install
 
 ENTRYPOINT ["yarn", "run", "start"]
