@@ -51,7 +51,8 @@
 		"docs": "node tsc_output/src/docs",
 		"prebuild": "rimraf -rf tsc_output",
 		"start": "node tsc_output/index.js",
-		"style": "prettier --check ."
+		"style": "prettier --check .",
+		"lint": "xo"
 	},
 	"xo": {
 		"prettier": true
