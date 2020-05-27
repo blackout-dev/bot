@@ -49,10 +49,10 @@
 		"build": "tsc",
 		"deploy": "semantic-release",
 		"docs": "node tsc_output/src/docs",
+		"lint": "xo",
 		"prebuild": "rimraf -rf tsc_output",
 		"start": "node tsc_output/index.js",
-		"style": "prettier --check .",
-		"lint": "xo"
+		"style": "prettier --check ."
 	},
 	"xo": {
 		"prettier": true
