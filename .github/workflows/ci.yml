@@ -117,5 +117,5 @@ jobs:
       - name: Deploy
         run: yarn run deploy
         env:
-          GITHUB_USER: ${{ secrets.GITHUB_USER }}
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -17,7 +17,7 @@
 					{
 						"url": "docker.pkg.github.com",
 						"imageName": "docker.pkg.github.com/blackout-dev/bot/bot",
-						"user": "GITHUB_USER",
+						"user": "GITHUB_ACTOR",
 						"password": "GITHUB_TOKEN"
 					}
 				]
