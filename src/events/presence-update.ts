@@ -1,13 +1,16 @@
 import {Presence} from 'discord.js';
 import {logger} from '../util/logger';
 import {queue, amqpUri} from '../util/config';
-import {MessagePublisher} from '../rabbitmq/publish';
+import {MessagePublisher, messagePublisherLogger} from '../rabbitmq/publish';
 
 let messagePublisher: MessagePublisher | undefined;
 
 if (amqpUri) {
 	messagePublisher = new MessagePublisher(queue, amqpUri);
-	messagePublisher.init();
+	messagePublisher
+		.init()
+		.then(() => messagePublisherLogger.info('Message publisher initialized'))
+		.catch(error => messagePublisherLogger.error(error));
 }
 
 /**
@@ -26,14 +29,16 @@ export function handle(oldPresence: Presence | undefined, newPresence: Presence)
 
 		if (messagePublisher) {
 			if (messagePublisher.ready) {
-				messagePublisher.send({
-					bot: user,
-					guild: newPresence.guild,
-					online: !offline,
-					time: new Date()
-				});
+				messagePublisher
+					.send({
+						bot: user,
+						guild: newPresence.guild,
+						online: !offline,
+						time: new Date()
+					})
+					.catch(error => messagePublisherLogger.error(error));
 			} else {
-				logger.warn('message publisher not ready');
+				messagePublisherLogger.warn('message publisher not ready');
 			}
 		}
 	}
