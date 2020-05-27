@@ -1,6 +1,6 @@
 {
-  "typescript.tsdk": ".vscode/pnpify/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "prettier.prettierPath": ".vscode/pnpify/prettier/index.js",
-  "eslint.nodePath": ".vscode/pnpify"
+	"typescript.tsdk": ".vscode/pnpify/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"prettier.prettierPath": ".vscode/pnpify/prettier/index.js",
+	"eslint.nodePath": ".vscode/pnpify"
 }

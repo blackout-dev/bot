@@ -243,7 +243,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:^8.0.0":
+"@semantic-release/commit-analyzer@npm:8.0.1, @semantic-release/commit-analyzer@npm:^8.0.0":
   version: 8.0.1
   resolution: "@semantic-release/commit-analyzer@npm:8.0.1"
   dependencies:
@@ -280,6 +280,24 @@ __metadata:
   peerDependencies:
     semantic-release: ">=16.0.0 <18.0.0"
   checksum: 3/dcfc309cbc6700617d956889f081c4ff4dd00e0d15621d981a5dfabc9e34e6f692b79e8876c6b61ca2b21f6e9a06ab36e4a2fcf487a81323c201b1db897a0703
+  languageName: node
+  linkType: hard
+
+"@semantic-release/git@npm:9.0.0":
+  version: 9.0.0
+  resolution: "@semantic-release/git@npm:9.0.0"
+  dependencies:
+    "@semantic-release/error": ^2.1.0
+    aggregate-error: ^3.0.0
+    debug: ^4.0.0
+    dir-glob: ^3.0.0
+    execa: ^4.0.0
+    lodash: ^4.17.4
+    micromatch: ^4.0.0
+    p-reduce: ^2.0.0
+  peerDependencies:
+    semantic-release: ">=16.0.0 <18.0.0"
+  checksum: 3/8a96bc9e44f537b77515761b1958467b218e294eba7091c1b5e2ce8dd5390e60da9c87e7a91d097d1f24709f0ef980b9657d51a04ca01fbf23207fab9a425b00
   languageName: node
   linkType: hard
 
@@ -332,7 +350,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^9.0.0":
+"@semantic-release/release-notes-generator@npm:9.0.1, @semantic-release/release-notes-generator@npm:^9.0.0":
   version: 9.0.1
   resolution: "@semantic-release/release-notes-generator@npm:9.0.1"
   dependencies:
@@ -1241,7 +1259,10 @@ __metadata:
   resolution: "blackout-bot@workspace:."
   dependencies:
     "@eclass/semantic-release-docker": 1.0.3
+    "@semantic-release/commit-analyzer": 8.0.1
     "@semantic-release/exec": 5.0.0
+    "@semantic-release/git": 9.0.0
+    "@semantic-release/release-notes-generator": 9.0.1
     "@types/amqplib": 0.5.13
     "@types/dotenv": 8.2.0
     "@types/node": 14.0.5
@@ -6236,7 +6257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.2":
+"micromatch@npm:^4.0.0, micromatch@npm:^4.0.2":
   version: 4.0.2
   resolution: "micromatch@npm:4.0.2"
   dependencies:

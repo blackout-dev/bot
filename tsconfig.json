@@ -1,16 +1,16 @@
 {
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": false,
-    "inlineSources": true,
-    "inlineSourceMap": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "tsc_output",
-    "resolveJsonModule": true,
-    "strict": true,
-    "target": "es2019"
-  },
-  "exclude": ["node_modules", "./src/**/*.test.*"],
-  "include": ["src", "types"]
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": false,
+		"inlineSources": true,
+		"inlineSourceMap": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "tsc_output",
+		"resolveJsonModule": true,
+		"strict": true,
+		"target": "es2019"
+	},
+	"exclude": ["node_modules", "./src/**/*.test.*"],
+	"include": ["src", "types"]
 }

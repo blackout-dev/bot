@@ -2,11 +2,13 @@
 	"plugins": [
 		"@semantic-release/commit-analyzer",
 		"@semantic-release/release-notes-generator",
-		"@semantic-release/npm",
 		"@semantic-release/git",
-		["@semantic-release/exec", {
-			"publishCmd": "docker build -t bot ."
-		}],
+		[
+			"@semantic-release/exec",
+			{
+				"publishCmd": "docker build -t bot ."
+			}
+		],
 		[
 			"@eclass/semantic-release-docker",
 			{

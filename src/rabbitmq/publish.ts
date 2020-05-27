@@ -1,6 +1,7 @@
 import * as amqp from 'amqplib';
 import {Channel} from 'amqplib';
 import {Guild, Snowflake, User} from 'discord.js';
+import {logger} from '../util/logger';
 
 interface PresenceMessage {
 	guildId: Snowflake;
@@ -9,24 +10,22 @@ interface PresenceMessage {
 	time: string;
 }
 
+export const messagePublisherLogger = logger.child({child: 'message publisher'});
+
 /**
  * Publishes message to a RabbitMQ broker.
  */
 export class MessagePublisher {
 	channel?: Channel;
 	ready = false;
+	logger = messagePublisherLogger;
 	constructor(private readonly queue: string, private readonly uri: string) {}
 
 	/**
 	 * Send a datapoint message to the message broker.
 	 * @param data Data to send
 	 */
-	async send(data: {
-		guild: Guild;
-		bot: User;
-		online: boolean;
-		time: Date;
-	}): Promise<boolean> {
+	async send(data: {guild: Guild; bot: User; online: boolean; time: Date}): Promise<boolean> {
 		if (this.channel) {
 			return this.channel.sendToQueue(
 				this.queue,
@@ -41,9 +40,7 @@ export class MessagePublisher {
 			);
 		}
 
-		throw new TypeError(
-			'Channel has not been initialized, use MessagePublisher#init'
-		);
+		throw new TypeError('Channel has not been initialized, use MessagePublisher#init');
 	}
 
 	/**
