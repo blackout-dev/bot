@@ -45,6 +45,7 @@
 		"typescript": "3.9.3",
 		"xo": "0.30.0"
 	},
+	"license": "Apache-2.0",
 	"main": "./tsc_output/src/index.js",
 	"name": "blackout-bot",
 	"private": true,
