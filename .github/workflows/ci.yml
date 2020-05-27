@@ -3,8 +3,8 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  compile:
-    name: Compile
+  build:
+    name: Build
 
     runs-on: ubuntu-latest
 
