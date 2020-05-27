@@ -15,10 +15,7 @@ if (amqpUri) {
  * @param oldPresence Old presence to handle
  * @param newPresence New presence to handle
  */
-export function handle(
-	oldPresence: Presence | undefined,
-	newPresence: Presence
-): void {
+export function handle(oldPresence: Presence | undefined, newPresence: Presence): void {
 	const {user} = newPresence;
 
 	if (user && newPresence.guild && user.client.user?.id !== user.id) {

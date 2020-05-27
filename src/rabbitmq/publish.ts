@@ -21,12 +21,7 @@ export class MessagePublisher {
 	 * Send a datapoint message to the message broker.
 	 * @param data Data to send
 	 */
-	async send(data: {
-		guild: Guild;
-		bot: User;
-		online: boolean;
-		time: Date;
-	}): Promise<boolean> {
+	async send(data: {guild: Guild; bot: User; online: boolean; time: Date}): Promise<boolean> {
 		if (this.channel) {
 			return this.channel.sendToQueue(
 				this.queue,
@@ -41,9 +36,7 @@ export class MessagePublisher {
 			);
 		}
 
-		throw new TypeError(
-			'Channel has not been initialized, use MessagePublisher#init'
-		);
+		throw new TypeError('Channel has not been initialized, use MessagePublisher#init');
 	}
 
 	/**
