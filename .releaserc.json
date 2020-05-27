@@ -1,0 +1,25 @@
+{
+	"plugins": [
+		"@semantic-release/commit-analyzer",
+		"@semantic-release/release-notes-generator",
+		"@semantic-release/npm",
+		"@semantic-release/git",
+		["@semantic-release/exec", {
+			"publishCmd": "docker build -t bot ."
+		}],
+		[
+			"@eclass/semantic-release-docker",
+			{
+				"baseImageName": "bot",
+				"registries": [
+					{
+						"url": "docker.pkg.github.com",
+						"imageName": "docker.pkg.github.com/blackout-dev/bot/bot",
+						"user": "GITHUB_USER",
+						"password": "GITHUB_TOKEN"
+					}
+				]
+			}
+		]
+	]
+}

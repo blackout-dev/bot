@@ -1,0 +1,12 @@
+.github
+.vscode
+.yarn/*
+!.yarn/releases/*
+node_modules
+tsc_output
+.editorconfig
+.gitignore
+.pnp.*
+.prettierignore
+.releaserc.json
+*.env
