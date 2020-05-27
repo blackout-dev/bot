@@ -1,7 +1,5 @@
 .github
 .vscode
-.yarn/*
-!.yarn/releases/*
 node_modules
 tsc_output
 .editorconfig
