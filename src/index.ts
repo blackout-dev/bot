@@ -8,6 +8,7 @@ import {clientOptions} from './util/client-options';
 import {discordToken} from './util/config';
 import {logger} from './util/logger';
 
+/** Discord.js client. */
 export const client = new Client(clientOptions);
 
 client
