@@ -2,6 +2,7 @@ import * as amqp from 'amqplib';
 import {Channel} from 'amqplib';
 import {Snowflake, User} from 'discord.js';
 import {logger} from '../util/logger';
+import {EventEmitter} from 'events';
 
 interface PresenceMessage {
 	bot_id: Snowflake;
@@ -14,11 +15,13 @@ export const messagePublisherLogger = logger.child({child: 'message publisher'})
 /**
  * Publishes message to a RabbitMQ broker.
  */
-export class MessagePublisher {
+export class MessagePublisher extends EventEmitter {
 	channel?: Channel;
 	ready = false;
 	logger = messagePublisherLogger;
-	constructor(private readonly queue: string, private readonly uri: string) {}
+	constructor(private readonly queue: string, private readonly uri: string) {
+		super();
+	}
 
 	/**
 	 * Send a datapoint message to the message broker.
@@ -54,5 +57,6 @@ export class MessagePublisher {
 		await this.channel.assertQueue(this.queue);
 
 		this.ready = true;
+		this.emit('ready');
 	}
 }

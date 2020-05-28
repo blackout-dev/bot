@@ -3,15 +3,18 @@ import {logger} from '../util/logger';
 import {queue, amqpUri} from '../util/config';
 import {MessagePublisher, messagePublisherLogger} from '../rabbitmq/publish';
 
-let messagePublisher: MessagePublisher | undefined;
+// Since this is not a constant TypeScript won't treat it the same way when we assert it to not be undefind
+let temporaryMessagePublisher: MessagePublisher | undefined;
 
 if (amqpUri) {
-	messagePublisher = new MessagePublisher(queue, amqpUri);
-	messagePublisher
+	temporaryMessagePublisher = new MessagePublisher(queue, amqpUri);
+	temporaryMessagePublisher
 		.init()
 		.then(() => messagePublisherLogger.info('Message publisher initialized'))
 		.catch(error => messagePublisherLogger.error(error));
 }
+
+const messagePublisher = temporaryMessagePublisher;
 
 /**
  * Handle a presence update.
@@ -19,7 +22,11 @@ if (amqpUri) {
  * @param newPresence New presence to handle
  */
 export function handle(oldPresence: Presence | undefined, newPresence: Presence): void {
-	const {user} = newPresence;
+	const user = newPresence.user ?? newPresence.member?.user;
+
+	if (!user) {
+		logger.warn('No user in presence update');
+	}
 
 	if (user?.bot && user.client.user?.id !== user.id) {
 		const offline = newPresence.status === 'offline';
@@ -27,16 +34,20 @@ export function handle(oldPresence: Presence | undefined, newPresence: Presence)
 		logger.info({user: newPresence.userID, offline});
 
 		if (messagePublisher) {
-			if (messagePublisher.ready) {
+			const send = async () =>
 				messagePublisher
 					.send({
 						bot: user,
 						online: !offline,
 						time: new Date()
 					})
-					.catch(error => messagePublisherLogger.error(error));
+					.catch(messagePublisherLogger.error);
+
+			if (messagePublisher.ready) {
+				send().catch(messagePublisherLogger.error);
 			} else {
-				messagePublisherLogger.warn('message publisher not ready');
+				messagePublisherLogger.warn('Message publisher not ready');
+				messagePublisher.once('ready', send);
 			}
 		}
 	}
