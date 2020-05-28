@@ -8,4 +8,3 @@ tsc_output
 .prettierignore
 .releaserc.json
 *.env
-.yarn/plugins/@yarnpkg/plugin-version.js
