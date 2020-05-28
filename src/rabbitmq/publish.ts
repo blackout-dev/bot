@@ -4,9 +4,9 @@ import {Snowflake, User} from 'discord.js';
 import {logger} from '../util/logger';
 
 interface PresenceMessage {
-	botId: Snowflake;
+	bot_id: Snowflake;
 	online: boolean;
-	time: string;
+	when: string;
 }
 
 export const messagePublisherLogger = logger.child({child: 'message publisher'});
@@ -30,9 +30,9 @@ export class MessagePublisher {
 				this.queue,
 				Buffer.from(
 					JSON.stringify({
-						botId: data.bot.id,
+						bot_id: data.bot.id,
 						online: data.online,
-						time: data.time.toString()
+						when: data.time.toUTCString()
 					} as PresenceMessage)
 				)
 			);
