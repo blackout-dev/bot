@@ -48,7 +48,7 @@
 	},
 	"license": "Apache-2.0",
 	"main": "./tsc_output/src/index.js",
-	"name": "blackout-bot",
+	"name": "bot",
 	"private": true,
 	"scripts": {
 		"build": "tsc",
