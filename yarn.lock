@@ -283,7 +283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:^7.0.0, @semantic-release/github@npm:^7.0.7":
+"@semantic-release/github@npm:7.0.7, @semantic-release/github@npm:^7.0.0":
   version: 7.0.7
   resolution: "@semantic-release/github@npm:7.0.7"
   dependencies:
@@ -1243,14 +1243,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"blackout-bot@workspace:.":
+"bluebird@npm:^3.5.1, bluebird@npm:^3.5.2, bluebird@npm:^3.5.3, bluebird@npm:^3.5.5":
+  version: 3.7.2
+  resolution: "bluebird@npm:3.7.2"
+  checksum: 3/4f2288662f3d4eadbb82d4daa4a7d7976a28fa3c7eb4102c9b4033b03e5be4574ba123ac52a7c103cde4cb7b2d2afc1dbe41817ca15a29ff21ecd258d0286047
+  languageName: node
+  linkType: hard
+
+"bn.js@npm:^4.0.0, bn.js@npm:^4.1.0, bn.js@npm:^4.4.0":
+  version: 4.11.9
+  resolution: "bn.js@npm:4.11.9"
+  checksum: 3/31630d3560b28931010980886a0f657b37ce818ba237867cd838e89a1a0b71044fb4977aa56376616997b372bbb3f55d3bb25e5378c48c1d24a47bfb4235b60e
+  languageName: node
+  linkType: hard
+
+"bn.js@npm:^5.1.1":
+  version: 5.1.2
+  resolution: "bn.js@npm:5.1.2"
+  checksum: 3/ed0f337a224d874c8c58c604f8454184cd7069a6619c65a556e1b3a9544f7d22013add4460381288a9676e188e9f0e6e672a4ab8676d4834119d20f8ad782892
+  languageName: node
+  linkType: hard
+
+"bot@workspace:.":
   version: 0.0.0-use.local
-  resolution: "blackout-bot@workspace:."
+  resolution: "bot@workspace:."
   dependencies:
     "@eclass/semantic-release-docker": 1.0.3
     "@semantic-release/commit-analyzer": 8.0.1
     "@semantic-release/exec": 5.0.0
-    "@semantic-release/github": ^7.0.7
+    "@semantic-release/github": 7.0.7
     "@semantic-release/release-notes-generator": 9.0.1
     "@types/amqplib": 0.5.13
     "@types/dotenv": 8.2.0
@@ -1280,34 +1301,13 @@ __metadata:
     pino-pretty: 4.0.0
     prettier: 2.0.5
     semantic-release: 17.0.8
-    semantic-release-slack-bot: ^1.6.2
+    semantic-release-slack-bot: 1.6.2
     typescript: 3.9.3
     utf-8-validate: 5.0.2
     xo: 0.30.0
     zlib-sync: 0.1.6
   languageName: unknown
   linkType: soft
-
-"bluebird@npm:^3.5.1, bluebird@npm:^3.5.2, bluebird@npm:^3.5.3, bluebird@npm:^3.5.5":
-  version: 3.7.2
-  resolution: "bluebird@npm:3.7.2"
-  checksum: 3/4f2288662f3d4eadbb82d4daa4a7d7976a28fa3c7eb4102c9b4033b03e5be4574ba123ac52a7c103cde4cb7b2d2afc1dbe41817ca15a29ff21ecd258d0286047
-  languageName: node
-  linkType: hard
-
-"bn.js@npm:^4.0.0, bn.js@npm:^4.1.0, bn.js@npm:^4.4.0":
-  version: 4.11.9
-  resolution: "bn.js@npm:4.11.9"
-  checksum: 3/31630d3560b28931010980886a0f657b37ce818ba237867cd838e89a1a0b71044fb4977aa56376616997b372bbb3f55d3bb25e5378c48c1d24a47bfb4235b60e
-  languageName: node
-  linkType: hard
-
-"bn.js@npm:^5.1.1":
-  version: 5.1.2
-  resolution: "bn.js@npm:5.1.2"
-  checksum: 3/ed0f337a224d874c8c58c604f8454184cd7069a6619c65a556e1b3a9544f7d22013add4460381288a9676e188e9f0e6e672a4ab8676d4834119d20f8ad782892
-  languageName: node
-  linkType: hard
 
 "bottleneck@npm:^2.18.1":
   version: 2.19.5
@@ -8823,7 +8823,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-slack-bot@npm:^1.6.2":
+"semantic-release-slack-bot@npm:1.6.2":
   version: 1.6.2
   resolution: "semantic-release-slack-bot@npm:1.6.2"
   dependencies:
