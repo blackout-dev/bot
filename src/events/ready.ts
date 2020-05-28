@@ -11,7 +11,7 @@ export function handle(client: Client): void {
 	// Publish every user's presence
 	const bots = client.users.cache.filter(user => user.bot);
 
-	bots.map(bot => {
+	bots.forEach(bot => {
 		// Publish the account's presence
 		client.emit('presenceUpdate', undefined, bot.presence);
 		// Remove this user from the cache
