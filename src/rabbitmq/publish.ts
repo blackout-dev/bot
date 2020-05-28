@@ -1,10 +1,9 @@
 import * as amqp from 'amqplib';
 import {Channel} from 'amqplib';
-import {Guild, Snowflake, User} from 'discord.js';
+import {Snowflake, User} from 'discord.js';
 import {logger} from '../util/logger';
 
 interface PresenceMessage {
-	guildId: Snowflake;
 	botId: Snowflake;
 	online: boolean;
 	time: string;
@@ -25,14 +24,13 @@ export class MessagePublisher {
 	 * Send a datapoint message to the message broker.
 	 * @param data Data to send
 	 */
-	async send(data: {guild: Guild; bot: User; online: boolean; time: Date}): Promise<boolean> {
+	async send(data: {bot: User; online: boolean; time: Date}): Promise<boolean> {
 		if (this.channel) {
 			return this.channel.sendToQueue(
 				this.queue,
 				Buffer.from(
 					JSON.stringify({
 						botId: data.bot.id,
-						guildId: data.guild.id,
 						online: data.online,
 						time: data.time.toString()
 					} as PresenceMessage)

@@ -21,8 +21,7 @@ if (amqpUri) {
 export function handle(oldPresence: Presence | undefined, newPresence: Presence): void {
 	const {user} = newPresence;
 
-	if (user && newPresence.guild && user.client.user?.id !== user.id) {
-		// If (user?.bot && newPresence.guild && user?.client.user?.id !== user?.id) {
+	if (user?.bot && user.client.user?.id !== user.id) {
 		const offline = newPresence.status === 'offline';
 
 		logger.info({user: newPresence.userID, offline});
@@ -32,7 +31,6 @@ export function handle(oldPresence: Presence | undefined, newPresence: Presence)
 				messagePublisher
 					.send({
 						bot: user,
-						guild: newPresence.guild,
 						online: !offline,
 						time: new Date()
 					})
