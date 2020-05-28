@@ -1296,7 +1296,7 @@ __metadata:
     eslint-plugin-node: 11.1.0
     eslint-plugin-prettier: 3.1.3
     eslint-plugin-promise: 4.2.1
-    eslint-plugin-unicorn: 20.0.0
+    eslint-plugin-unicorn: 20.1.0
     pino: 6.3.0
     pino-pretty: 4.0.0
     prettier: 2.0.5
@@ -3257,17 +3257,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:20.0.0":
-  version: 20.0.0
-  resolution: "eslint-plugin-unicorn@npm:20.0.0"
+"eslint-plugin-unicorn@npm:20.1.0":
+  version: 20.1.0
+  resolution: "eslint-plugin-unicorn@npm:20.1.0"
   dependencies:
     ci-info: ^2.0.0
     clean-regexp: ^1.0.0
     eslint-ast-utils: ^1.1.0
-    eslint-template-visitor: ^1.1.0
+    eslint-template-visitor: ^2.0.0
     eslint-utils: ^2.0.0
     import-modules: ^2.0.0
     lodash: ^4.17.15
+    pluralize: ^8.0.0
     read-pkg-up: ^7.0.1
     regexp-tree: ^0.1.21
     reserved-words: ^0.1.2
@@ -3275,7 +3276,7 @@ __metadata:
     semver: ^7.3.2
   peerDependencies:
     eslint: ">=7.0.0"
-  checksum: 3/9373554752a47f4b16d6c0eb9ed7fd28639e2e2107c9c3d0c4d172a00763df05459de3d78cc9faafa36246aa3dc17855d8df8cfbe760f6471e2848dab150fcc0
+  checksum: 3/951d0fdd51c29d70015fb8387dfb43538d3750d97905fdb381b6f6119644c1603eba5039c6c92401089c7e9b27dde6e165663eecef1d72b77283d96a83308553
   languageName: node
   linkType: hard
 
@@ -3328,6 +3329,19 @@ __metadata:
   peerDependencies:
     eslint: ^6.4.0
   checksum: 3/e6e9b885108ce840acfe871827786b04c495f358812a199a0b6d34f89476518dae578f2013c3d97087f48a50fbfefc4126f9e23b28a4d16796da5d5d763ebc96
+  languageName: node
+  linkType: hard
+
+"eslint-template-visitor@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "eslint-template-visitor@npm:2.0.0"
+  dependencies:
+    eslint-visitor-keys: ^1.1.0
+    espree: ^7.0.0
+    multimap: ^1.1.0
+  peerDependencies:
+    eslint: ">=7.0.0"
+  checksum: 3/f161aa86a34ccfa1e5095f149d3f0c3d09b55f62587d2a8421ff996c631d52a72bd3a892d1ac34a3989a0be20d64872341d159cd3d258aa0d2e7e4bb9c30f82f
   languageName: node
   linkType: hard
 
@@ -6611,7 +6625,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"multimap@npm:^1.0.2":
+"multimap@npm:^1.0.2, multimap@npm:^1.1.0":
   version: 1.1.0
   resolution: "multimap@npm:1.1.0"
   checksum: 3/74e4affbac66dcdc3ba42d1b14a6a96b39e7e9067ef65c14f5f797fc701a2eb3f7d377a6eaf5c1acfa0b42892e842e5ad18ceeee734b84bf53d74d1a6a72aec0
@@ -7851,6 +7865,13 @@ __metadata:
   dependencies:
     irregular-plurals: ^2.0.0
   checksum: 3/062523bf00d26e6444decf3254e1c3d04e0039ca507d645dd4490b09312d237c5fcd71cebc9abba6122107209ab99a4b89c68b7e698c447c3ae9c1e00b57f335
+  languageName: node
+  linkType: hard
+
+"pluralize@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "pluralize@npm:8.0.0"
+  checksum: 3/5251b470a0c8e5181ac7e1d61028553f90cb2c85c34b8e468cea269ae715499524546c2c3681029ef5697d86c54bfb12e49388f5cc6082051e84f5888588f4ec
   languageName: node
   linkType: hard
 
