@@ -44,6 +44,9 @@ COPY package.json .yarnrc.yml ./
 # Copy compiled TypeScript
 COPY --from=builder /usr/src/builder/tsc_output ./tsc_output
 
+# Copy readme for GitHub Packages description
+COPY readme.md readme.md
+
 # Link dependencies
 RUN apk --no-cache add python=2.7.18-r0 g++=9.2.0-r4 make=4.2.1-r2 && rm -rf /var/cache/apk/*
 RUN yarn install
