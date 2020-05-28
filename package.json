@@ -59,6 +59,7 @@
 		"start": "node tsc_output/index.js",
 		"style": "prettier --check ."
 	},
+	"version": "0.0.0-development",
 	"xo": {
 		"prettier": true
 	}
