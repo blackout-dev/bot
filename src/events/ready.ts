@@ -6,7 +6,7 @@ import {Client} from 'discord.js';
  * @param client The client that became ready
  */
 export function handle(client: Client): void {
-	logger.info('ready');
+	logger.info('Ready');
 
 	// Publish every user's presence
 	const bots = client.users.cache.filter(user => user.bot);
