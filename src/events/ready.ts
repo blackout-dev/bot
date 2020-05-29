@@ -1,20 +1,27 @@
 import {logger} from '../util/logger';
-import {Client} from 'discord.js';
+import {PresenceUtil} from '../util/presence';
 
 /**
  * Emitted when the client becomes ready to start working.
- * @param client The client that became ready
+ * @param presenceUtil The presence util to use
  */
-export function handle(client: Client): void {
+export function handle(presenceUtil: PresenceUtil): void {
 	logger.info('Ready');
 
+	const {client} = presenceUtil;
+
 	// Publish every user's presence
-	const bots = client.users.cache.filter(user => user.bot);
+	const [bots, humans] = client.users.cache.partition(user => user.bot && user.id !== client.user?.id);
+
+	// Remove humans from the cache since we aren't ever going to need that data
+	humans.forEach(human => client.users.cache.delete(human.id));
+
+	logger.info(`Reporting ${bots.size} presence updates at boot`);
 
 	bots.forEach(bot => {
+		logger.info({presence: bot.presence});
+
 		// Publish the account's presence
-		client.emit('presenceUpdate', undefined, bot.presence);
-		// Remove this user from the cache
-		client.users.cache.delete(bot.id);
+		presenceUtil.send(bot.presence);
 	});
 }
