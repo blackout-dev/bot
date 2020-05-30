@@ -9,6 +9,7 @@ import {logger} from '../util/logger';
  */
 interface PresenceMessage {
 	bot_id: Snowflake;
+	guild_id: Snowflake;
 	online: boolean;
 	when: string;
 }
