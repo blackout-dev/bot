@@ -35,8 +35,8 @@ const presenceUtil = new PresenceUtil(client, messagePublisher);
 client
 	.on('debug', debug)
 	.on('error', error)
-	.on('presenceUpdate', (...args) => presenceUpdate(presenceUtil, ...args))
-	.on('ready', () => ready(presenceUtil))
+	.on('presenceUpdate', async (...args) => presenceUpdate(presenceUtil, ...args))
+	.on('ready', async () => ready(presenceUtil))
 	.on('warn', warn);
 
 client.login(discordToken).catch(error => logger.fatal(error));

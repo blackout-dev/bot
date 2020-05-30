@@ -1,7 +1,7 @@
 import {Presence} from 'discord.js';
 import {logger} from '../util/logger';
 import {PresenceUtil} from '../util/presence';
-import {meili, botsIndexRequest, BotDocument} from '../meili';
+import {meili, botsIndexRequest, BotDocument, meiliLogger} from '../meili';
 import {index} from '../meili/util';
 
 /**
@@ -16,7 +16,12 @@ export async function handle(presenceUtil: PresenceUtil, oldPresence: Presence |
 	if (user) {
 		const botsIndex = await index(meili, botsIndexRequest);
 
-		botsIndex.updateDocuments([{id: user.id, username: user.username} as BotDocument]);
+		const documents: BotDocument[] = [{id: user.id, username: user.username}];
+
+		botsIndex
+			.updateDocuments(documents)
+			.then(response => meiliLogger.debug({response, msg: `MeiliSearch document updated for bot ${user.username} ${user.id}`}))
+			.catch(meiliLogger.error);
 	} else {
 		// This shouldn't ever really happen
 		logger.warn('No user in presence update');

@@ -1,4 +1,5 @@
 import MeiliSearch, {Index, IndexRequest} from 'meilisearch';
+import {meiliLogger} from '.';
 
 /**
  * Words to ignore in search results.
@@ -17,11 +18,14 @@ export async function index(meili: MeiliSearch, index: IndexRequest): Promise<In
 
 	if (foundIndexs.find(foundIndex => foundIndex.uid === index.uid)) {
 		return meili.getIndex(index.uid);
-	} else {
-		const created = await meili.createIndex(index);
-
-		created.updateStopWords(stopWords);
-
-		return created;
 	}
+
+	const created = await meili.createIndex(index);
+
+	created
+		.updateStopWords(stopWords)
+		.then(() => meiliLogger.debug(`Stop words updated for index ${index.uid}`))
+		.catch(meiliLogger.error);
+
+	return created;
 }
