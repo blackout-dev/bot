@@ -1,9 +1,9 @@
 import * as dotenv from 'dotenv';
 import {join as joinPaths} from 'path';
 
-const path = joinPaths(__dirname, '..', '..', 'bot.env');
-
 if (process.env.NODE_ENV !== 'production') {
+	const path = joinPaths(__dirname, '..', '..', 'bot.env');
+
 	dotenv.config({path});
 }
 
@@ -15,3 +15,6 @@ export const amqpUri = process.env.AMQP_URI;
 
 /** Queue to use for RabbitMQ. */
 export const queue = 'record-presence';
+
+/** Host to use for MeiliSearch. */
+export const meiliSearchHost = process.env.MEILI_SEARCH_HOST;

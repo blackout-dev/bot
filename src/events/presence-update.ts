@@ -1,6 +1,8 @@
 import {Presence} from 'discord.js';
 import {logger} from '../util/logger';
 import {PresenceUtil} from '../util/presence';
+import {meili, botsIndexRequest, BotDocument} from '../meili';
+import {index} from '../meili/util';
 
 /**
  * Handle a presence update.
@@ -8,11 +10,15 @@ import {PresenceUtil} from '../util/presence';
  * @param oldPresence Old presence to handle
  * @param newPresence New presence to handle
  */
-export function handle(presenceUtil: PresenceUtil, oldPresence: Presence | undefined, newPresence: Presence): void {
+export async function handle(presenceUtil: PresenceUtil, oldPresence: Presence | undefined, newPresence: Presence): Promise<void> {
 	const user = newPresence.user ?? newPresence.member?.user;
 
-	// This shouldn't ever really happen
-	if (!user) {
+	if (user) {
+		const botsIndex = await index(meili, botsIndexRequest);
+
+		botsIndex.updateDocuments([{id: user.id, username: user.username} as BotDocument]);
+	} else {
+		// This shouldn't ever really happen
 		logger.warn('No user in presence update');
 	}
 

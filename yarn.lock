@@ -1155,6 +1155,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^0.19.2":
+  version: 0.19.2
+  resolution: "axios@npm:0.19.2"
+  dependencies:
+    follow-redirects: 1.5.10
+  checksum: 3/bad346deea24050f9953ce09bb8015f85a99a7b8f016806adccfab0b8981827d1fbee9c77c0ef7c70cc48392c1af6bbc65e07c3e88221d17282d2d5fd0a191f6
+  languageName: node
+  linkType: hard
+
 "bail@npm:^1.0.0":
   version: 1.0.5
   resolution: "bail@npm:1.0.5"
@@ -1297,6 +1306,7 @@ __metadata:
     eslint-plugin-prettier: 3.1.3
     eslint-plugin-promise: 4.2.1
     eslint-plugin-unicorn: 20.1.0
+    meilisearch: 0.10.0
     pino: 6.3.0
     pino-pretty: 4.0.0
     prettier: 2.0.5
@@ -2444,7 +2454,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:3.1.0":
+"debug@npm:3.1.0, debug@npm:=3.1.0":
   version: 3.1.0
   resolution: "debug@npm:3.1.0"
   dependencies:
@@ -3916,6 +3926,15 @@ __metadata:
     inherits: ^2.0.3
     readable-stream: ^2.3.6
   checksum: 3/b8fa1fbfadd5c4b6df3cf2c34b3c408fe508a2899c536bafa339f679de545689997e907bd4ff61dd292942f8044fb2f293a5956dd8b601f6a5601617842d0dda
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:1.5.10":
+  version: 1.5.10
+  resolution: "follow-redirects@npm:1.5.10"
+  dependencies:
+    debug: =3.1.0
+  checksum: 3/6e58e02c31337b6b41ffc3d5f3d49920b7db428eddcf374537da00ef121fe473983e12d8557f4304287604168d3efcc288d1f009abaf4c9d61e5db0c0cee3c4a
   languageName: node
   linkType: hard
 
@@ -6282,6 +6301,15 @@ __metadata:
   version: 1.0.1
   resolution: "meant@npm:1.0.1"
   checksum: 3/423ab7f5c9bf355ce11f6ac4b8094a6b123302af4a7c218e112b1a0bdce2ca4ede241cc9444deb061b88a80f3d1602b8804ee487c4e5cf9e13bd4b1748c82d74
+  languageName: node
+  linkType: hard
+
+"meilisearch@npm:0.10.0":
+  version: 0.10.0
+  resolution: "meilisearch@npm:0.10.0"
+  dependencies:
+    axios: ^0.19.2
+  checksum: 3/340d14b6841950d93b289186f695f04ef367e9622fdb382f214bf6ca61ea3de591c8194bbbedc60256b630a578bd251482cad5b5543fe4dc3923866d113c8b13
   languageName: node
   linkType: hard
 
