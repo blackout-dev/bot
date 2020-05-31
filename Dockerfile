@@ -30,7 +30,7 @@ RUN yarn run build
 ### BOT STAGE ###
 FROM node:12.17.0-alpine AS bot
 
-WORKDIR /usr/src/blackout
+WORKDIR /usr/src/blackouts
 
 ENV NODE_ENV=production
 
