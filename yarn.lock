@@ -1314,7 +1314,7 @@ __metadata:
     eslint-plugin-promise: 4.2.1
     eslint-plugin-unicorn: 20.1.0
     meilisearch: 0.10.0
-    pino: 6.3.0
+    pino: 6.3.1
     pino-pretty: 4.0.0
     prettier: 2.0.5
     semantic-release: 17.0.8
@@ -7850,9 +7850,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino@npm:6.3.0":
-  version: 6.3.0
-  resolution: "pino@npm:6.3.0"
+"pino@npm:6.3.1":
+  version: 6.3.1
+  resolution: "pino@npm:6.3.1"
   dependencies:
     fast-redact: ^2.0.0
     fast-safe-stringify: ^2.0.7
@@ -7862,7 +7862,7 @@ __metadata:
     sonic-boom: ^1.0.0
   bin:
     pino: bin.js
-  checksum: 3/bf924472bb0435205ad2758552530ab0ede96e25a2874436c4f82b245fa3ee6fb54abc6c47cbb845173fdf5bfac3d55d9a37e46c9545f33d75d3a9cfe3627de7
+  checksum: 3/3425865864caed74115bf073276dbf4a794039d142d0dedafcff4daf8af6c702b7c39207c2bd9b0a9f12785447b4a0448ad6f9a2ccf8cb3b17f5e5e9ce3c4bb6
   languageName: node
   linkType: hard
 
