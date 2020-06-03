@@ -10,7 +10,7 @@
 		"bufferutil": "4.0.1",
 		"discord.js": "12.2.0",
 		"meilisearch": "0.10.1",
-		"pino": "6.3.1",
+		"pino": "6.3.2",
 		"utf-8-validate": "5.0.2",
 		"zlib-sync": "0.1.6"
 	},
