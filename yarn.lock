@@ -1248,7 +1248,7 @@ __metadata:
     prettier: 2.0.5
     semantic-release: 17.0.8
     semantic-release-slack-bot: 1.6.2
-    typescript: 3.9.3
+    typescript: 3.9.5
     utf-8-validate: 5.0.2
     xo: 0.32.0
     zlib-sync: 0.1.6
@@ -9955,7 +9955,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@3.9.3, typescript@^3.3.1":
+typescript@3.9.5:
+  version: 3.9.5
+  resolution: "typescript@npm:3.9.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 3/15618435493667083eb43dc7b36c4d3dd47fd9e9c8a14f0ac4019bbf6124b6cc518b6ed506400913db1bf50831207ee8201b5d827680076930b562923f4f18a0
+  languageName: node
+  linkType: hard
+
+typescript@^3.3.1:
   version: 3.9.3
   resolution: "typescript@npm:3.9.3"
   bin:
@@ -9965,7 +9975,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@3.9.3#builtin<compat/typescript>, typescript@patch:typescript@^3.3.1#builtin<compat/typescript>":
+"typescript@patch:typescript@3.9.5#builtin<compat/typescript>":
+  version: 3.9.5
+  resolution: "typescript@patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=8cac75"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 3/347b57e017c6f6c956eb7fc3c392e764bb924b1758103207cfb9c465210d4134212a164a064c259d524f055b86b023ebecc3e3ab5b5d666c1c0d96e1397149f6
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^3.3.1#builtin<compat/typescript>":
   version: 3.9.3
   resolution: "typescript@patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=8cac75"
   bin:
