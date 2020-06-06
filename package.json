@@ -45,7 +45,7 @@
 		"semantic-release": "17.0.8",
 		"semantic-release-slack-bot": "1.6.2",
 		"typescript": "3.9.3",
-		"xo": "0.30.0"
+		"xo": "0.32.0"
 	},
 	"license": "Apache-2.0",
 	"main": "./tsc_output/src/index.js",
