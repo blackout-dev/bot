@@ -1231,7 +1231,7 @@ __metadata:
     dotenv: 8.2.0
     eslint: 7.1.0
     eslint-config-prettier: 6.11.0
-    eslint-config-xo: 0.29.1
+    eslint-config-xo: 0.30.0
     eslint-config-xo-typescript: 0.31.0
     eslint-import-resolver-node: 0.3.3
     eslint-plugin-ava: 10.3.0
@@ -3003,7 +3003,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-typescript@npm:0.31.0":
+"eslint-config-xo-typescript@npm:0.31.0, eslint-config-xo-typescript@npm:^0.31.0":
   version: 0.31.0
   resolution: "eslint-config-xo-typescript@npm:0.31.0"
   peerDependencies:
@@ -3014,29 +3014,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-typescript@npm:^0.31.0":
-  version: 0.31.0
-  resolution: "eslint-config-xo-typescript@npm:0.31.0"
-  peerDependencies:
-    "@typescript-eslint/eslint-plugin": ">=3.0.1"
-    eslint: ">=6.6.0"
-    typescript: ">=3.6.0"
-  checksum: 3/1ad19a543ba031afcd0e266d894445eb0b46f35b0333f69a3b5459c6dd567b12ebc04b9061cfb58abf24d2ad74ca67ca5490376ac6cac3a58808b48984c3cca5
-  languageName: node
-  linkType: hard
-
-"eslint-config-xo@npm:0.29.1":
-  version: 0.29.1
-  resolution: "eslint-config-xo@npm:0.29.1"
-  dependencies:
-    confusing-browser-globals: 1.0.9
-  peerDependencies:
-    eslint: ">=6.8.0"
-  checksum: 3/5d5838ce76ec05c16da0f7d4f8d9d8eddb0da3fccdcdaa0dbbafeb4300001b6134d92b46ea758fc6abb2fc346dabd1cc5c3e653425cb98a1d1b9758eaea489cc
-  languageName: node
-  linkType: hard
-
-"eslint-config-xo@npm:^0.30.0":
+"eslint-config-xo@npm:0.30.0, eslint-config-xo@npm:^0.30.0":
   version: 0.30.0
   resolution: "eslint-config-xo@npm:0.30.0"
   dependencies:
