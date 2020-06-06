@@ -1232,7 +1232,7 @@ __metadata:
     eslint: 7.1.0
     eslint-config-prettier: 6.11.0
     eslint-config-xo: 0.29.1
-    eslint-config-xo-typescript: 0.29.0
+    eslint-config-xo-typescript: 0.31.0
     eslint-import-resolver-node: 0.3.3
     eslint-plugin-ava: 10.3.0
     eslint-plugin-eslint-comments: 3.2.0
@@ -3003,14 +3003,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-typescript@npm:0.29.0":
-  version: 0.29.0
-  resolution: "eslint-config-xo-typescript@npm:0.29.0"
+"eslint-config-xo-typescript@npm:0.31.0":
+  version: 0.31.0
+  resolution: "eslint-config-xo-typescript@npm:0.31.0"
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ">=2.33.0"
+    "@typescript-eslint/eslint-plugin": ">=3.0.1"
     eslint: ">=6.6.0"
-    typescript: ">=3.5.3"
-  checksum: 3/5cad9d4c50ce19575ffb844baf18f88b63fa93d52188b670bc166a913e951d63592b2d77680aeb7ab39203e3bce525b2fccb3069fecc5da133d5aa23dbe9e680
+    typescript: ">=3.6.0"
+  checksum: 3/1ad19a543ba031afcd0e266d894445eb0b46f35b0333f69a3b5459c6dd567b12ebc04b9061cfb58abf24d2ad74ca67ca5490376ac6cac3a58808b48984c3cca5
   languageName: node
   linkType: hard
 
