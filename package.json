@@ -12,7 +12,7 @@
 		"meilisearch": "0.10.1",
 		"pino": "6.3.2",
 		"utf-8-validate": "5.0.2",
-		"zlib-sync": "0.1.6"
+		"zlib-sync": "0.1.7"
 	},
 	"devDependencies": {
 		"@eclass/semantic-release-docker": "1.0.3",
