@@ -1251,7 +1251,7 @@ __metadata:
     typescript: 3.9.5
     utf-8-validate: 5.0.2
     xo: 0.32.0
-    zlib-sync: 0.1.6
+    zlib-sync: 0.1.7
   languageName: unknown
   linkType: soft
 
@@ -10856,12 +10856,12 @@ typescript@^3.3.1:
   languageName: node
   linkType: hard
 
-"zlib-sync@npm:0.1.6":
-  version: 0.1.6
-  resolution: "zlib-sync@npm:0.1.6"
+"zlib-sync@npm:0.1.7":
+  version: 0.1.7
+  resolution: "zlib-sync@npm:0.1.7"
   dependencies:
     nan: ^2.14.0
     node-gyp: latest
-  checksum: 3/83177050695255b793108fbf9bce39a3fe0c2f82ca0ee45df75083b8d598f9b9f4997ec36c005e920f93105f091d3a6c4391354b25ee3c50255999c8a6c33f9c
+  checksum: 3/9d1b37a451cd95dc315a6fc2a46a45ab275a2db88716803c65852b7baaf724be1024884a4a3cb09b9e8e46a43e12c10a9cdc35673bc4b5984f568b0001be56e1
   languageName: node
   linkType: hard
