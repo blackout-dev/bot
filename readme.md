@@ -10,7 +10,9 @@ An account is determined to be online if their presence status isn't offline (ex
 
 ### Environment variables
 
-| Environment variable | Description           |
-| -------------------- | --------------------- |
-| `DISCORD_TOKEN`      | Discord bot token     |
-| `AMQP_URI`           | AMQP URI for RabbitMQ |
+| Environment variable                                                                                            | Description                                              |
+| --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| `DISCORD_TOKEN`                                                                                                 | Discord bot token                                        |
+| `AMQP_URI`                                                                                                      | AMQP URI for RabbitMQ                                    |
+| `MEILI_SEARCH_HOST`                                                                                             | MeiliSearch host                                         |
+| [`MEILISEARCH_PRIVATE_KEY`](https://docs.meilisearch.com/guides/advanced_guides/authentication.html#master-key) | MeiliSearch API token with permissions to update indexes |

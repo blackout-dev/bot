@@ -6,16 +6,12 @@ import {handle as ready} from './events/ready';
 import {handle as warn} from './events/warn';
 import {MessagePublisher, messagePublisherLogger} from './rabbitmq/message-publisher';
 import {clientOptions} from './util/client-options';
-import {amqpUri, discordToken, meiliSearchHost, queue} from './util/config';
+import {amqpUri, discordToken, queue} from './util/config';
 import {logger} from './util/logger';
 import {PresenceUtil} from './util/presence';
 
 if (amqpUri === undefined) {
 	throw new TypeError('No AMQP URI was defined');
-}
-
-if (meiliSearchHost === undefined) {
-	throw new TypeError('No MeiliSearch host was defined');
 }
 
 /** Discord.js client. */

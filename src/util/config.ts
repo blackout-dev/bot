@@ -18,3 +18,6 @@ export const queue = 'record-presence';
 
 /** Host to use for MeiliSearch. */
 export const meiliSearchHost = process.env.MEILI_SEARCH_HOST;
+
+/** Private key to use for authenticating with MeiliSearch. */
+export const meiliSearchPrivateKey = process.env.MEILI_SEARCH_PRIVATE_KEY;
