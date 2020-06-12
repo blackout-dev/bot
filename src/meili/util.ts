@@ -1,5 +1,6 @@
 import MeiliSearch, {Index, IndexRequest} from 'meilisearch';
-import {meiliLogger} from '.';
+import {meiliLogger, BotDocument} from '.';
+import {User} from 'discord.js';
 
 /**
  * Words to ignore in search results.
@@ -28,4 +29,13 @@ export async function index(meili: MeiliSearch, index: IndexRequest): Promise<In
 		.catch(meiliLogger.error);
 
 	return created;
+}
+
+/**
+ * Convert a Discord.js user into a MeiliSearch document.
+ * @param user Discord user
+ * @returns A document read yot be inserted into MeiliSearch
+ */
+export function userToMeiliDoc(user: User): BotDocument {
+	return {id: user.id, avatarHash: user.avatar, discriminator: Number.parseInt(user.discriminator, 10), username: user.username};
 }

@@ -2,7 +2,7 @@ import {Presence} from 'discord.js';
 import {logger} from '../util/logger';
 import {PresenceUtil} from '../util/presence';
 import {meili, botsIndexRequest, BotDocument, meiliLogger} from '../meili';
-import {index} from '../meili/util';
+import {index, userToMeiliDoc} from '../meili/util';
 
 /**
  * Handle a presence update.
@@ -16,7 +16,7 @@ export async function handle(presenceUtil: PresenceUtil, oldPresence: Presence |
 	if (user) {
 		const botsIndex = await index(meili, botsIndexRequest);
 
-		const documents: BotDocument[] = [{id: user.id, username: user.username}];
+		const documents: BotDocument[] = [userToMeiliDoc(user)];
 
 		botsIndex
 			.updateDocuments(documents)

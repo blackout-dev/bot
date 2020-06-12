@@ -25,4 +25,6 @@ export const botsIndexRequest: IndexRequest = {uid: 'bots', primaryKey: 'id' as 
 export interface BotDocument {
 	id: Snowflake;
 	username: string;
+	discriminator: number;
+	avatarHash: string | null;
 }

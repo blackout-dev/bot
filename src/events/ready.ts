@@ -1,5 +1,5 @@
-import {BotDocument, botsIndexRequest, meili, meiliLogger} from '../meili';
-import {index} from '../meili/util';
+import {botsIndexRequest, meili, meiliLogger, BotDocument} from '../meili';
+import {index, userToMeiliDoc} from '../meili/util';
 import {logger} from '../util/logger';
 import {PresenceUtil} from '../util/presence';
 
@@ -23,7 +23,7 @@ export async function handle(presenceUtil: PresenceUtil): Promise<void> {
 	const botIndex = await index(meili, botsIndexRequest);
 
 	botIndex
-		.addDocuments(bots.map((bot): BotDocument => ({id: bot.id, username: bot.username})))
+		.addDocuments(bots.map((bot): BotDocument => userToMeiliDoc(bot)))
 		.then(response => meiliLogger.info({response, msg: 'MeiliSearch bots index updated with new user info'}))
 		.catch(error => meiliLogger.error(error));
 
