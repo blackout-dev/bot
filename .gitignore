@@ -228,4 +228,6 @@ tsc_output/
 .yarn/*
 !.yarn/releases
 !.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
 .pnp.*
