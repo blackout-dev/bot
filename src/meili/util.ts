@@ -21,7 +21,7 @@ export async function index(meili: MeiliSearch, index: IndexRequest): Promise<In
 		return meili.getIndex(index.uid);
 	}
 
-	const created = await meili.createIndex(index);
+	const created = await meili.createIndex(index.uid, {primaryKey: index.primaryKey});
 
 	created
 		.updateStopWords(stopWords)
