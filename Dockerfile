@@ -1,5 +1,5 @@
 ### BUILDER STAGE ###
-FROM node:12.18.0-alpine AS builder
+FROM node:12.18.1-alpine AS builder
 
 # Create app directory
 WORKDIR /usr/src/builder
@@ -28,7 +28,7 @@ COPY src ./src
 RUN yarn run build
 
 ### BOT STAGE ###
-FROM node:12.18.0-alpine AS bot
+FROM node:12.18.1-alpine AS bot
 
 WORKDIR /usr/src/blackouts
 
