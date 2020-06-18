@@ -13,7 +13,7 @@ COPY .yarn/releases/yarn-berry.js .yarn/releases/yarn-berry.js
 # Setup node-gyp
 RUN apk --no-cache add python=2.7.18-r0 g++=9.2.0-r4 make=4.2.1-r2 && rm -rf /var/cache/apk/*
 
-# Copy your local cache to speed up builds, Yarn will download any update that are required, so this has no negative side effects
+# Copy your local cache to speed up builds, Yarn will download any updates that are required, so this has no negative side effects
 COPY .yarn ./.yarn
 
 RUN yarn install
