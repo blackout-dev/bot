@@ -43,18 +43,16 @@ export class MessagePublisher extends EventEmitter {
 	 * Send a datapoint message to the message broker.
 	 * @param data Data to send
 	 */
-	async send(data: {bot: Snowflake; online: boolean; time: Date}): Promise<boolean> {
+	async send(data: {bot: Snowflake; online: boolean; time: Date; guildId: Snowflake}): Promise<boolean> {
 		if (this.channel) {
-			return this.channel.sendToQueue(
-				this.queue,
-				Buffer.from(
-					JSON.stringify({
-						bot_id: data.bot,
-						online: data.online,
-						when: data.time.toUTCString()
-					} as PresenceMessage)
-				)
-			);
+			const message: PresenceMessage = {
+				bot_id: data.bot,
+				online: data.online,
+				when: data.time.toUTCString(),
+				guild_id: data.guildId
+			};
+
+			return this.channel.sendToQueue(this.queue, Buffer.from(JSON.stringify(message)));
 		}
 
 		throw new TypeError('Channel has not been initialized, use MessagePublisher#init');

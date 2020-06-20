@@ -38,10 +38,10 @@ export class PresenceUtil {
 	 * @param presence Presence to send
 	 */
 	send(presence: Presence): void {
-		if (this.filterPresence(presence)) {
+		if (this.filterPresence(presence) && presence.guild) {
 			const online = PresenceUtil.isOnline(presence.status);
 
-			const data = {bot: presence.userID, online, time: new Date()};
+			const data = {bot: presence.userID, online, time: new Date(), guildId: presence.guild.id};
 
 			PresenceUtil.logger.info(data);
 
