@@ -8,7 +8,7 @@ ENV NODE_ENV=production
 
 # Install dependencies
 COPY package.json yarn.lock .yarnrc.yml ./
-COPY .yarn/releases/yarn-berry.js .yarn/releases/yarn-berry.js
+COPY .yarn/releases .yarn/releases
 
 # Setup node-gyp
 RUN apk --no-cache add python=2.7.18-r0 g++=9.2.0-r4 make=4.2.1-r2 && rm -rf /var/cache/apk/*
