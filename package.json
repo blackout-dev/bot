@@ -42,7 +42,7 @@
 		"eslint-plugin-unicorn": "20.1.0",
 		"pino-pretty": "4.0.0",
 		"prettier": "2.0.5",
-		"semantic-release": "17.0.8",
+		"semantic-release": "17.1.0",
 		"semantic-release-slack-bot": "1.6.2",
 		"typescript": "3.9.5",
 		"xo": "0.32.0"
