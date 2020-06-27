@@ -1,5 +1,5 @@
 import {Snowflake} from 'discord.js';
-import MeiliSearch, {IndexRequest} from 'meilisearch';
+import MeiliSearch, {IndexRequest, DocumentLike} from 'meilisearch';
 import {meiliSearchHost, meiliSearchPrivateKey} from '../util/config';
 import {logger} from '../util/logger';
 
@@ -17,12 +17,12 @@ if (meiliSearchPrivateKey === undefined) {
 export const meili = new MeiliSearch({host: meiliSearchHost, apiKey: meiliSearchPrivateKey});
 
 /** Index request for the `bots` index. */
-export const botsIndexRequest: IndexRequest = {uid: 'bots', primaryKey: 'id' as keyof BotDocument};
+export const botsIndexRequest: IndexRequest = {uid: 'bots', primaryKey: 'id'};
 
 /**
  * A bot document in MeiliSearch.
  */
-export interface BotDocument {
+export interface BotDocument extends DocumentLike {
 	id: Snowflake;
 	username: string;
 	discriminator: number;
