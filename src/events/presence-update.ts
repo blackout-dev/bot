@@ -14,7 +14,7 @@ export async function handle(presenceUtil: PresenceUtil, oldPresence: Presence |
 	const user = newPresence.user ?? newPresence.member?.user;
 
 	if (user) {
-		const botsIndex = await index(meili, botsIndexRequest);
+		const botsIndex = await index<BotDocument>(meili, botsIndexRequest);
 
 		const documents: BotDocument[] = [userToMeiliDoc(user)];
 

@@ -20,7 +20,7 @@ export async function handle(presenceUtil: PresenceUtil): Promise<void> {
 
 	logger.info(`Reporting ${bots.size} presence updates at boot`);
 
-	const botIndex = await index(meili, botsIndexRequest);
+	const botIndex = await index<BotDocument>(meili, botsIndexRequest);
 
 	botIndex
 		.addDocuments(bots.map((bot): BotDocument => userToMeiliDoc(bot)))

@@ -1,6 +1,6 @@
-import MeiliSearch, {Index, IndexRequest} from 'meilisearch';
-import {meiliLogger, BotDocument} from '.';
 import {User} from 'discord.js';
+import MeiliSearch, {Index, IndexRequest} from 'meilisearch';
+import {BotDocument, meiliLogger} from '.';
 
 /**
  * Words to ignore in search results.
@@ -12,7 +12,7 @@ const stopWords: string[] = ['bot'];
  * Find or create an index.
  * @param meili MeiliSearch client to initialize
  */
-export async function index(meili: MeiliSearch, index: IndexRequest): Promise<Index> {
+export async function index<T>(meili: MeiliSearch, index: IndexRequest): Promise<Index<T>> {
 	const foundIndexs = await meili.listIndexes();
 
 	// If the index existed in the list return that, create it otherwise
