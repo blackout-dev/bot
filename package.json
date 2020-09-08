@@ -5,7 +5,7 @@
 		"url": "https://jonah.pw"
 	},
 	"dependencies": {
-		"@semantic-release/github": "7.0.7",
+		"@semantic-release/github": "7.1.1",
 		"amqplib": "0.6.0",
 		"bufferutil": "4.0.1",
 		"discord.js": "12.2.0",

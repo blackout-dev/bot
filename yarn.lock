@@ -284,7 +284,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:7.0.7, @semantic-release/github@npm:^7.0.0":
+"@semantic-release/github@npm:7.1.1":
+  version: 7.1.1
+  resolution: "@semantic-release/github@npm:7.1.1"
+  dependencies:
+    "@octokit/rest": ^17.0.0
+    "@semantic-release/error": ^2.2.0
+    aggregate-error: ^3.0.0
+    bottleneck: ^2.18.1
+    debug: ^4.0.0
+    dir-glob: ^3.0.0
+    fs-extra: ^9.0.0
+    globby: ^11.0.0
+    http-proxy-agent: ^4.0.0
+    https-proxy-agent: ^5.0.0
+    issue-parser: ^6.0.0
+    lodash: ^4.17.4
+    mime: ^2.4.3
+    p-filter: ^2.0.0
+    p-retry: ^4.0.0
+    url-join: ^4.0.0
+  peerDependencies:
+    semantic-release: ">=16.0.0 <18.0.0"
+  checksum: 202f7c91203bac4cf928a093c72f16a84acc7326a10711c64fdbaa89787f175ddac383b05166d18d42464d308378ed1d58ae84b81abf45ce79490bbb579c3f8e
+  languageName: node
+  linkType: hard
+
+"@semantic-release/github@npm:^7.0.0":
   version: 7.0.7
   resolution: "@semantic-release/github@npm:7.0.7"
   dependencies:
@@ -1325,7 +1351,7 @@ __metadata:
     "@eclass/semantic-release-docker": 1.0.4
     "@semantic-release/commit-analyzer": 8.0.1
     "@semantic-release/exec": 5.0.0
-    "@semantic-release/github": 7.0.7
+    "@semantic-release/github": 7.1.1
     "@semantic-release/release-notes-generator": 9.0.1
     "@types/amqplib": 0.5.13
     "@types/dotenv": 8.2.0
