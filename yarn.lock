@@ -478,10 +478,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:12.12.57":
-  version: 12.12.57
-  resolution: "@types/node@npm:12.12.57"
-  checksum: 533ce720c2ac4e04c3d5463c9cbd391fb7a1a2cbdd1df564e7e85ed67312ad29843ec12ba3bc478ae6663e0909f39456ddff7527f1437d2ea56d4d5eb9a6ec2e
+"@types/node@npm:12.12.58":
+  version: 12.12.58
+  resolution: "@types/node@npm:12.12.58"
+  checksum: a9f00fdb41baedfc9fa059d29635de4baf4d30505cbb87f3505e05ec7d003320b4424d36fadc2384cb2001a0a660bed9d3d1da134b12e9c45fbd3c9b077611fb
   languageName: node
   linkType: hard
 
@@ -1329,7 +1329,7 @@ __metadata:
     "@semantic-release/release-notes-generator": 9.0.1
     "@types/amqplib": 0.5.13
     "@types/dotenv": 8.2.0
-    "@types/node": 12.12.57
+    "@types/node": 12.12.58
     "@types/pino": 6.3.0
     "@types/ws": 7.2.6
     "@typescript-eslint/eslint-plugin": 3.7.1
