@@ -1347,7 +1347,7 @@ __metadata:
     eslint-plugin-unicorn: 21.0.0
     meilisearch: 0.11.3
     pino: 6.7.0
-    pino-pretty: 4.2.1
+    pino-pretty: 4.3.0
     prettier: 2.0.5
     semantic-release: 17.1.2
     semantic-release-slack-bot: 1.6.2
@@ -7760,9 +7760,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino-pretty@npm:4.2.1":
-  version: 4.2.1
-  resolution: "pino-pretty@npm:4.2.1"
+"pino-pretty@npm:4.3.0":
+  version: 4.3.0
+  resolution: "pino-pretty@npm:4.3.0"
   dependencies:
     "@hapi/bourne": ^2.0.0
     args: ^5.0.1
@@ -7777,7 +7777,7 @@ __metadata:
     strip-json-comments: ^3.1.1
   bin:
     pino-pretty: bin.js
-  checksum: 7e67470f90c40c601640167f1563885f899030cccd78ef0cbc126a2af55e996de730ed04d525f70b0e6e6bb616d4e993833c3a4abf57c041c25ebbae400dec9d
+  checksum: 5568775825f7261aa40b9c334d694e1570d8641f3dd9df06a0ee3f73e526304cfd74d70993913313be55cc2e0ab16b581312132963444e075078d862ef8b3be3
   languageName: node
   linkType: hard
 
