@@ -1337,7 +1337,7 @@ __metadata:
     eslint-config-xo: 0.32.1
     eslint-config-xo-typescript: 0.31.0
     eslint-import-resolver-node: 0.3.4
-    eslint-plugin-ava: 10.5.0
+    eslint-plugin-ava: 11.0.0
     eslint-plugin-eslint-comments: 3.2.0
     eslint-plugin-import: 2.22.1
     eslint-plugin-no-use-extend-native: 0.5.0
@@ -3174,7 +3174,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-ava@npm:10.5.0, eslint-plugin-ava@npm:^10.5.0":
+"eslint-plugin-ava@npm:11.0.0":
+  version: 11.0.0
+  resolution: "eslint-plugin-ava@npm:11.0.0"
+  dependencies:
+    deep-strict-equal: ^0.2.0
+    enhance-visitors: ^1.0.0
+    eslint-utils: ^2.1.0
+    espree: ^7.2.0
+    espurify: ^2.0.1
+    import-modules: ^2.0.0
+    micro-spelling-correcter: ^1.1.1
+    pkg-dir: ^4.2.0
+    resolve-from: ^5.0.0
+  peerDependencies:
+    eslint: ">=7.7.0"
+  checksum: bc6d28b943503cf6d35b90bd52cb7077116b9ded88a0bba62ab04097ffb5dcf1d999558c928745e8c0c7a14e21726c001875ebbb4260c50fb99d9433dd90e91b
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-ava@npm:^10.5.0":
   version: 10.5.0
   resolution: "eslint-plugin-ava@npm:10.5.0"
   dependencies:
@@ -3491,7 +3510,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^7.3.0":
+"espree@npm:^7.2.0, espree@npm:^7.3.0":
   version: 7.3.0
   resolution: "espree@npm:7.3.0"
   dependencies:
