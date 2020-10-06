@@ -41,7 +41,7 @@
 		"eslint-plugin-promise": "4.2.1",
 		"eslint-plugin-unicorn": "21.0.0",
 		"pino-pretty": "4.3.0",
-		"prettier": "2.0.5",
+		"prettier": "2.1.2",
 		"semantic-release": "17.1.2",
 		"semantic-release-slack-bot": "1.6.2",
 		"typescript": "3.9.7",
