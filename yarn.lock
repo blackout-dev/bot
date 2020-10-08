@@ -420,13 +420,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/amqplib@npm:0.5.13":
-  version: 0.5.13
-  resolution: "@types/amqplib@npm:0.5.13"
+"@types/amqplib@npm:0.5.14":
+  version: 0.5.14
+  resolution: "@types/amqplib@npm:0.5.14"
   dependencies:
     "@types/bluebird": "*"
     "@types/node": "*"
-  checksum: 6c25750b5630612e77c496596d2afbac544d0fc4010e58cf0e8b8b4683e500f4bbef9a7c5ebca7f68e6bcf44717cf68efa0ea6894006011cebe88a46448eb880
+  checksum: c330e910cb485289fa946572c688c077e48629d4dbe6dc28d6e9b5716a35ebd900e7a61a32abde75f68796f6bcf148421e187eb4da2d022d43f544306ea1b869
   languageName: node
   linkType: hard
 
@@ -1312,7 +1312,7 @@ __metadata:
     "@semantic-release/exec": 5.0.0
     "@semantic-release/github": 7.1.1
     "@semantic-release/release-notes-generator": 9.0.1
-    "@types/amqplib": 0.5.13
+    "@types/amqplib": 0.5.14
     "@types/dotenv": 8.2.0
     "@types/node": 12.12.64
     "@types/pino": 6.3.2
