@@ -1336,7 +1336,7 @@ __metadata:
     eslint-plugin-prettier: 3.1.4
     eslint-plugin-promise: 4.2.1
     eslint-plugin-unicorn: 21.0.0
-    meilisearch: 0.14.1
+    meilisearch: 0.14.2
     pino: 6.7.0
     pino-pretty: 4.3.0
     prettier: 2.1.2
@@ -6343,12 +6343,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meilisearch@npm:0.14.1":
-  version: 0.14.1
-  resolution: "meilisearch@npm:0.14.1"
+"meilisearch@npm:0.14.2":
+  version: 0.14.2
+  resolution: "meilisearch@npm:0.14.2"
   dependencies:
     cross-fetch: ^3.0.5
-  checksum: 99782b224bc77f22e18fbba638b29817c80ecf60acb9882b3861214b68bd6844021ab1906c7ee927e0a3edaaab4318156f2e4236cfe03705cc4cadc2c5f82e08
+  checksum: 853a9b30e6aedc98a9ba6a9c3a04ab1d37910d6c3f74910eaefc8f3fa9705349f25d8fc0910bc7e072c9547991d0d2f22a6263f49ee55ae70244ad077c3bdbc8
   languageName: node
   linkType: hard
 
