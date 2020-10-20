@@ -552,14 +552,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pino@npm:6.3.2":
-  version: 6.3.2
-  resolution: "@types/pino@npm:6.3.2"
+"@types/pino@npm:6.3.3":
+  version: 6.3.3
+  resolution: "@types/pino@npm:6.3.3"
   dependencies:
     "@types/node": "*"
     "@types/pino-std-serializers": "*"
     "@types/sonic-boom": "*"
-  checksum: 7be4bf12274ca6cff34b935d391f6de5e0f0451ba0fa095ea78a0cdca174e3904fe5b5d072ff12f543fe6bb038b65d156f63b5d56d1f86908672795880286273
+  checksum: 2f3e95f95908f3daa7fd210a2f677cbfb5d6e860b6fa8611d435d71ef69b7867fca0457a1230d1fc59e8041ad0ce1958af603b9c26c1a1639ee92fbdac3a3323
   languageName: node
   linkType: hard
 
@@ -1315,7 +1315,7 @@ __metadata:
     "@types/amqplib": 0.5.14
     "@types/dotenv": 8.2.0
     "@types/node": 12.12.69
-    "@types/pino": 6.3.2
+    "@types/pino": 6.3.3
     "@types/ws": 7.2.7
     "@typescript-eslint/eslint-plugin": 3.10.1
     "@typescript-eslint/parser": 3.10.1
