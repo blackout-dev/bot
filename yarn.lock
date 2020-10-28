@@ -588,12 +588,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ws@npm:7.2.8":
-  version: 7.2.8
-  resolution: "@types/ws@npm:7.2.8"
+"@types/ws@npm:7.2.9":
+  version: 7.2.9
+  resolution: "@types/ws@npm:7.2.9"
   dependencies:
     "@types/node": "*"
-  checksum: 5188aa5a91033c842160cf5b224422da5fda6a18c2bd7c2f5cfe7ed03cc15bf4eb1b6ed4dc72fb8edc32306e48ff2226dcad096fd603165778c8d89c25844dee
+  checksum: 77532ad73ca42d913abc22e4b6550a682e4c9ba810f6a798b40b3104c10cdff3787f692733f740f4083026c138318981eaee38663ea4dc0e5f4c4135802cb8d1
   languageName: node
   linkType: hard
 
@@ -1316,7 +1316,7 @@ __metadata:
     "@types/dotenv": 8.2.0
     "@types/node": 12.12.70
     "@types/pino": 6.3.3
-    "@types/ws": 7.2.8
+    "@types/ws": 7.2.9
     "@typescript-eslint/eslint-plugin": 3.10.1
     "@typescript-eslint/parser": 3.10.1
     amqplib: 0.6.0
