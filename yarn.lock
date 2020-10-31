@@ -1343,7 +1343,7 @@ __metadata:
     semantic-release: 17.2.2
     semantic-release-slack-bot: 1.6.2
     typescript: 4.0.5
-    utf-8-validate: 5.0.2
+    utf-8-validate: 5.0.3
     xo: 0.33.1
     zlib-sync: 0.1.7
   languageName: unknown
@@ -6780,17 +6780,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp-build@npm:~3.7.0":
-  version: 3.7.0
-  resolution: "node-gyp-build@npm:3.7.0"
-  bin:
-    node-gyp-build: ./bin.js
-    node-gyp-build-optional: ./optional.js
-    node-gyp-build-test: ./build-test.js
-  checksum: 61c7f2a9e44c5b23a0dc830e98cb0de3364894091daae0da471797627acedd06fe108107f4c840c2b0ff8bcfbdac8ec0c1767a3e159941eadd4c8fbbdc29a586
-  languageName: node
-  linkType: hard
-
 "node-gyp@npm:^5.0.2, node-gyp@npm:^5.1.0, node-gyp@npm:latest":
   version: 5.1.1
   resolution: "node-gyp@npm:5.1.1"
@@ -10403,13 +10392,13 @@ typescript@^3.9.7:
   languageName: node
   linkType: hard
 
-"utf-8-validate@npm:5.0.2":
-  version: 5.0.2
-  resolution: "utf-8-validate@npm:5.0.2"
+"utf-8-validate@npm:5.0.3":
+  version: 5.0.3
+  resolution: "utf-8-validate@npm:5.0.3"
   dependencies:
     node-gyp: latest
-    node-gyp-build: ~3.7.0
-  checksum: 1ca86a68ee4565141683cfdbf3c290cb746963be28040029717eb27b31ec305c0e0e99586af85eef060ed495617580fcc974250e15807a30a403d8df2a812984
+    node-gyp-build: ^4.2.0
+  checksum: 0204294d8584ffba171c6b0f97613a4a9c882152067672b45f533f2c640786042ee2b4aeb5f390d6a741eb93b0dc925404652a78c29f9348e6cd422cbdaa44ca
   languageName: node
   linkType: hard
 
