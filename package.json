@@ -19,7 +19,7 @@
 		"@semantic-release/commit-analyzer": "8.0.1",
 		"@semantic-release/exec": "5.0.0",
 		"@semantic-release/release-notes-generator": "9.0.1",
-		"@types/amqplib": "0.5.15",
+		"@types/amqplib": "0.5.16",
 		"@types/dotenv": "8.2.0",
 		"@types/node": "12.12.70",
 		"@types/pino": "6.3.3",
