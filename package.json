@@ -22,7 +22,7 @@
 		"@types/amqplib": "0.5.16",
 		"@types/dotenv": "8.2.0",
 		"@types/node": "12.12.70",
-		"@types/pino": "6.3.3",
+		"@types/pino": "6.3.4",
 		"@types/ws": "7.2.9",
 		"@typescript-eslint/eslint-plugin": "3.10.1",
 		"@typescript-eslint/parser": "3.10.1",
