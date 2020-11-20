@@ -1370,7 +1370,7 @@ __metadata:
     dotenv: 8.2.0
     eslint: 7.11.0
     eslint-config-prettier: 6.12.0
-    eslint-config-xo: 0.32.1
+    eslint-config-xo: 0.33.1
     eslint-config-xo-typescript: 0.31.0
     eslint-import-resolver-node: 0.3.4
     eslint-plugin-ava: 11.0.0
@@ -3142,7 +3142,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo@npm:0.32.1, eslint-config-xo@npm:^0.32.1":
+"eslint-config-xo@npm:0.33.1":
+  version: 0.33.1
+  resolution: "eslint-config-xo@npm:0.33.1"
+  dependencies:
+    confusing-browser-globals: 1.0.9
+  peerDependencies:
+    eslint: ">=7.11.0"
+  checksum: fe417ecfb369453504cceee86f8c1208752c057e6403646764f9b4e361bb07263c2d235a97d2712caf84067b764f828ee7567c910021d8a908249a722e958fac
+  languageName: node
+  linkType: hard
+
+"eslint-config-xo@npm:^0.32.1":
   version: 0.32.1
   resolution: "eslint-config-xo@npm:0.32.1"
   dependencies:
