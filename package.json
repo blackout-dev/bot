@@ -9,7 +9,7 @@
 		"amqplib": "0.6.0",
 		"bufferutil": "4.0.2",
 		"discord.js": "12.3.1",
-		"meilisearch": "0.14.2",
+		"meilisearch": "0.16.1",
 		"pino": "6.7.0",
 		"utf-8-validate": "5.0.3",
 		"zlib-sync": "0.1.7"
