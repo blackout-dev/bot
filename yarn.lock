@@ -347,9 +347,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:7.1.2":
-  version: 7.1.2
-  resolution: "@semantic-release/github@npm:7.1.2"
+"@semantic-release/github@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@semantic-release/github@npm:7.2.0"
   dependencies:
     "@octokit/rest": ^18.0.0
     "@semantic-release/error": ^2.2.0
@@ -369,7 +369,7 @@ __metadata:
     url-join: ^4.0.0
   peerDependencies:
     semantic-release: ">=16.0.0 <18.0.0"
-  checksum: 290eba94cd49cc954b56d0246141c2e9866654c381a8440fe2fe24917513cf3ab8f72c8ece4cce070b8e46e7ca06e4f4a24605c6646083b34df1a74870017745
+  checksum: 3921f675150310472e7c15f0e464bac7e8fc5df5ff2af275f85a9b45cf1154dd9bbc6d94e0bc2cf839c0320eef2193362d462781ab4ca270517b1704c01a254c
   languageName: node
   linkType: hard
 
@@ -1355,7 +1355,7 @@ __metadata:
     "@eclass/semantic-release-docker": 1.0.5
     "@semantic-release/commit-analyzer": 8.0.1
     "@semantic-release/exec": 5.0.0
-    "@semantic-release/github": 7.1.2
+    "@semantic-release/github": 7.2.0
     "@semantic-release/release-notes-generator": 9.0.1
     "@types/amqplib": 0.5.16
     "@types/dotenv": 8.2.0
@@ -1385,7 +1385,7 @@ __metadata:
     pino: 6.7.0
     pino-pretty: 4.3.0
     prettier: 2.1.2
-    semantic-release: 17.2.4
+    semantic-release: 17.3.0
     semantic-release-slack-bot: 1.6.2
     typescript: 4.0.5
     utf-8-validate: 5.0.3
@@ -8857,9 +8857,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:17.2.4":
-  version: 17.2.4
-  resolution: "semantic-release@npm:17.2.4"
+"semantic-release@npm:17.3.0":
+  version: 17.3.0
+  resolution: "semantic-release@npm:17.3.0"
   dependencies:
     "@semantic-release/commit-analyzer": ^8.0.0
     "@semantic-release/error": ^2.2.0
@@ -8891,7 +8891,7 @@ __metadata:
     yargs: ^15.0.1
   bin:
     semantic-release: bin/semantic-release.js
-  checksum: e20c8daa59853ece530e9e7364222b0351b03bbd61fa9b47a319d6a2291e798c3e636cdd60714484360356a2ff7bd9daaee6b03ad2f28b9d51943114b601a4f0
+  checksum: 06c63530f2bca6a1b23ce93a082366e7232f91aa9fed564c19f433e2f8ba52071c8d84eba33756780fa906649b449040d1f52cae1ba209e567e3c30ff4bfc9a3
   languageName: node
   linkType: hard
 
